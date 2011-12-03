@@ -36,7 +36,7 @@ Doctrine_Manager::getInstance()->bindComponent('Local', 'doctrine');
  * @method Local         setTheGeom()           Sets the current record's "the_geom" value
  * @method Local         setLocalCategory()     Sets the current record's "LocalCategory" value
  * 
- * @package    geo_search
+ * @package    PuntoSeguro
  * @subpackage model
  * @author     Gustavo Lacoste <gustavo@lacosox.org>
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $

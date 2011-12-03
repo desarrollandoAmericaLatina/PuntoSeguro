@@ -3,7 +3,7 @@
 /**
  * sfGuardGroup filter form base class.
  *
- * @package    geo_search
+ * @package    PuntoSeguro
  * @subpackage filter
  * @author     Gustavo Lacoste <gustavo@lacosox.org>
  * @version    SVN: $Id: sfDoctrineFormFilterGeneratedTemplate.php 29570 2010-05-21 14:49:47Z Kris.Wallsmith $
