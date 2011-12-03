@@ -1,0 +1,10 @@
+# data/fixtures/categories.yml
+LocalCategory:
+  categoria1:
+    name: Bar
+  categoria2:
+    name: Karaoke 
+  categoria3:
+    name: Música en Vivo
+  categoria4:
+    name: Pub    

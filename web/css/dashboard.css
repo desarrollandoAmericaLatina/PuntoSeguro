@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* 
+    Document   : dashboard
+    Created on : 03-11-2011, 02:07:01 AM
+    Author     : gustavo@lacosox.org (Gustavo Lacoste)
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+.formStyleGeoSearch{
+    width: 100%;
+    padding: 3px;
+    background-color: #F2F2F2;
+    padding: 10px;
+}
+
+.formStyleGeoSearch a{
+    color: #1F749C;
+    font-weight: bold;
+}
+
+.formStyleGeoSearch form input[type=text]{
+    background: url("../images/gfx/input_search.png")  no-repeat scroll #FFF;
+    border: 1px solid #CCCCCC;
+    color: #333333;
+    font-size: 14px;
+    height: 22px;
+    padding: 3px 0 1px 5px;
+    width: 625px;
+}
+
+.formStyleGeoSearch #local_direccion{
+    width: 534px !important;
+}
+
+.formStyleGeoSearch form label{
+    color: #C41200;
+    font-weight: bold;
+}
+
+
+.formStyleGeoSearch td, .formStyleGeoSearch th
+{
+  text-align: left;
+  vertical-align: top;
+  padding: 7px;
+}
+.formStyleGeoSearch #mapa_error_posicion_container{
+    margin: 10px;
+    display: none;
+}
+.formStyleGeoSearch #map_canvas{
+    height:370px;
+    background-color: black;
+}
+.formStyleGeoSearch #local_msg_pos_maker{
+    margin: 10px;
+}
+
+
+
+
+
+.negro{
+    background-color: #000;
+    display: none;
+}

@@ -1,0 +1,4 @@
+all:
+    stylesheets:   [search.css]
+    javascripts:
+      - search.js

@@ -1,0 +1,5 @@
+newLocalSuccess:
+    javascripts:   
+      - local.js
+    stylesheets:
+      - dashboard.css

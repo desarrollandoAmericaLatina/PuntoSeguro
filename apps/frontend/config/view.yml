@@ -1,0 +1,23 @@
+default:
+    http_metas:
+        content-type: text/html; charset=utf-8
+
+    metas:
+        author:       Gustavo Lacoste (gustavo@lacosox.org)
+        title:        Sistema
+        description:  Desc
+        keywords:     temuco, bar, panoramas
+        language:     es 
+        robots:       all
+
+
+    stylesheets:
+        - 960.min.css
+        - master.css
+
+
+    javascripts:
+        - geo_search.js
+
+    has_layout:     true
+    layout:         layout

@@ -1,0 +1,462 @@
+@charset "UTF-8";
+@import 'reset.css';
+@import 'text.css';
+
+/* `Basic HTML
+----------------------------------------------------------------------------------------------------*/
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+}
+
+a {
+  color: #06c;
+}
+
+a:hover {
+  color: #c60;
+}
+
+small {
+  font-size: 11px;
+}
+
+/* `Misc Classes
+----------------------------------------------------------------------------------------------------*/
+
+.align_center {
+  text-align: center;
+}
+
+.align_right {
+  text-align: right;
+}
+
+/* `Data Table
+----------------------------------------------------------------------------------------------------*/
+
+.data,
+.data th,
+.data td {
+  border-style: solid;
+  border-color: #ddd;
+}
+
+.data {
+  border-width: 0 1px 1px;
+  width: 100%;
+}
+
+.data caption {
+  padding: 0 10px 5px;
+  text-transform: uppercase;
+}
+
+.data th,
+.data td {
+  border-top-width: 1px;
+  padding: 5px 10px;
+}
+
+.data th {
+  white-space: nowrap;
+}
+
+.data thead th {
+  background: #eee;
+  font-weight: bold;
+  text-shadow: #fff 0 1px 0;
+}
+
+.data tbody th {
+  width: 1px;
+}
+
+.data tr th:first-child {
+  text-align: right;
+}
+
+/* `Code
+----------------------------------------------------------------------------------------------------*/
+
+pre,
+code {
+  font-size: 12px;
+  font-family: Menlo, Courier, monospace;
+}
+
+pre,
+.notice {
+  background: #ffe;
+  border: 1px solid;
+  border-color: #eed #ccb #bba #ddc;
+  overflow: auto;
+  padding: 10px 0 10px 10px;
+}
+
+* html pre {
+  overflow: hidden;
+  width: 97%;
+}
+
+code {
+  background: #ff9;
+  padding: 0 2px;
+}
+
+/* layout rápido */
+#header-account {
+    height: 21px;
+    padding: 4px 0;
+    position: relative;
+    text-align: right;
+    z-index: 101;
+}
+#header-account li {
+    display: block;
+    float: right;
+    font-size: 11px;
+    height: 21px;
+    line-height: 21px;
+    padding-left: 10px;
+}
+#header-account li .header-link {
+    display: inline-block;
+}
+.logged-out #header-account li .header-link {
+    font-weight: bold;
+}
+
+
+#header-account a {
+    color: #1F749C;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color: #555555;
+    text-decoration: underline;
+}
+
+
+#header-search-submit{
+    margin-top: 28px;
+}
+
+
+
+
+
+
+
+
+.tooltip {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.tooltip span {
+    -moz-border-radius: 5px 5px 5px 5px;
+    background: none repeat scroll 0 0 #000000;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin: 0 auto;
+    opacity: 0.9;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+
+#nav_cont a.nav_active {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+#nav_cont a {
+    height: 40px;
+    line-height: 42px;
+    margin-left: 5px;
+    padding: 0 10px;
+}
+#header_main a {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+
+
+#mastHead #header_find_form {
+    float: left;
+    margin: 9px 0 14px 10px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+#mastHead #header_find_form p {
+    float: left;
+    margin: 7px 10px 0 0;
+    text-align: left;
+}
+p {
+    margin-bottom: 10px;
+}
+
+#mastHead label {
+    color: #C41200;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+#mastHead form p em, #mastHead form #search_for label span {
+    color: #666666;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+#header_find_form input {
+    background: url("../images/gfx/input_search.png")  no-repeat scroll #FFF;
+    border: 1px solid #CCCCCC;
+    color: #333333;
+    font-size: 14px;
+    height: 22px;
+    padding: 3px 0 1px 5px;
+    width: 300px;
+}
+
+
+.ybtn button {
+    border: 0 none;
+    cursor: pointer;
+    font-family: inherit;
+    margin: 0;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+}
+.ybtn button::-moz-focus-inner {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+.ybtn button span {
+    display: block;
+    position: relative;
+    white-space: nowrap;
+}
+.ybtn button span {
+    margin-top: -1px;
+}
+a.ybtn:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+a.ybtn, a.ybtn span {
+    display: inline-block;
+}
+.ybtn button, .ybtn, .ybtn span {
+    background: url("../images/btn/blank_buttons.png")  no-repeat scroll right top transparent;
+    font-weight: bold;
+}
+span.ybtn {
+    background: none repeat scroll 0 0 transparent;
+}
+a.ybtn, .ybtn button {
+    outline: 0 none;
+    padding-right: 15px;
+    text-align: center;
+}
+.ybtn span {
+    padding-left: 15px;
+}
+.btn-r-l, .btn-r-l span {
+    background-position: left 0;
+    color: #FFFFFF;
+    font-size: 14px;
+    height: 31px;
+    line-height: 28px;
+}
+button.btn-r-l, .btn-r-l {
+    background-position: right -41px;
+}
+.btn-y-s, .btn-y-s span {
+    background-position: left -82px;
+    color: #C41200;
+    font-size: 11px;
+    height: 23px;
+    line-height: 21px;
+}
+button.btn-y-s, .btn-y-s {
+    background-position: right -114px;
+}
+.btn-b-s, .btn-b-s span {
+    background-position: left -146px;
+    color: #444444;
+    font-size: 10px;
+    height: 17px;
+    line-height: 17px;
+}
+* html .btn-b-s span {
+    line-height: 15px;
+}
+* + html .btn-b-s span {
+    line-height: 15px;
+}
+button.btn-b-s, .btn-b-s {
+    background-position: right -178px;
+}
+.btn-r-s, .btn-r-s span {
+    background-position: left -210px;
+    color: #FFFFFF;
+    font-size: 11px;
+    height: 22px;
+    line-height: 22px;
+}
+button.btn-r-s, .btn-r-s {
+    background-position: right -242px;
+    line-height: 22px;
+}
+button.btn-r-s span {
+    line-height: 22px;
+}
+.btn-r-l-active span {
+    background-position: left -278px;
+}
+button.btn-r-l-active, .btn-r-l-active {
+    background-position: right -319px;
+}
+.ie8 button.btn-r-l-active {
+}
+.btn-y-s-active span {
+    background-position: left -361px;
+}
+button.btn-y-s-active, .btn-y-s-active {
+    background-position: right -387px;
+}
+.ie8 button.btn-y-s-active {
+}
+.btn-b-s-active span {
+    background-position: left -424px;
+}
+button.btn-b-s-active, .btn-b-s-active {
+    background-position: right -456px;
+}
+.ie8 button.btn-b-s-active {
+}
+.btn-r-s-active span {
+    background-position: left -488px;
+}
+button.btn-r-s-active, .btn-r-s-active {
+    background-position: right -520px;
+}
+.ie8 button.btn-r-s-active {
+}
+.btn-r-l-disabled span {
+    background-position: left -558px;
+}
+button.btn-r-l-disabled, .btn-r-l-disabled {
+    background-position: right -599px;
+    cursor: default !important;
+}
+.btn-y-s-disabled span {
+    background-position: left -640px;
+    color: #DFB0A7;
+}
+button.btn-y-s-disabled, .btn-y-s-disabled {
+    background-position: right -672px;
+    cursor: default !important;
+}
+.btn-b-s-disabled span {
+    background-position: left -704px;
+}
+button.btn-b-s-disabled, .btn-b-s-disabled {
+    background-position: right -736px;
+}
+.btn-r-s-disabled span {
+    background-position: left -768px;
+}
+button.btn-r-s-disabled, .btn-r-s-disabled {
+    background-position: right -800px;
+}
+
+
+/*Login*/
+.formLogin .ui-widget-header{
+    background-image: none;
+    background-color: #FFF !important;
+    border: none;
+    color: #1F749C;
+    font-weight: bold;
+    margin-bottom: 13px;
+    text-align: center;
+}
+
+.formLogin .ui-widget-content .form-lbl {
+    color: #C41200;
+    font-weight: bold;
+} 
+
+.formLogin .ui-widget-content a {
+    color: #2B82AD;
+    text-decoration: none;
+} 
+
+.formLogin form input[type="text"], .formLogin form input[type="password"] {
+    background: url("../images/gfx/input_search.png") no-repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    color: #333333;
+    font-size: 14px;
+    height: 22px;
+    padding: 3px 0 1px 5px;
+    width: 266px;
+}
+
+
+
+/*Search filter*/
+.checkbox-list li label {
+    color: #333333 !important;
+    float: left;
+    font-weight: normal;
+    margin: 4px 20px 0 0;
+    padding: 0;
+    text-align: right;
+    display: inline-block !important;
+}      
+.checkbox-list li {
+    float: left;
+    line-height: 20px;
+    list-style: none outside none;
+    margin-left: 0px !important;
+    margin-top: 10px;
+}
+li input.checkbox {
+    margin-right: 5px;
+    vertical-align: middle;
+    font-family: arial,helvetica,verdana,sans-serif;
+    font-size: 90%;
+    line-height: 20px;
+    list-style: none outside none;
+    float: left;
+    width: auto !important;
+}

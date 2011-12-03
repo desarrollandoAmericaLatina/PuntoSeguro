@@ -1,0 +1,41 @@
+# data/fixtures/baresTemuco.yml
+Local:
+  local1:
+    nombre_local: Caravan
+    descripcion_local: Buenas cervezas internacionales.
+    category_id:  1
+    direccion: Alemania, 740, Temuco, Región de la Araucanía, Chile
+    lat: -38.734276
+    lng: -72.613024
+      
+  local2:
+    nombre_local: Plan B
+    descripcion_local: Bar universitario
+    category_id:  1
+    direccion: Manuel Bulnes, 846, Temuco, Región de la Araucanía, Chile
+    lat: -38.7416616
+    lng: -72.5897898
+      
+  local3:
+    nombre_local:  Carrusel
+    descripcion_local: Bar para treintañeros
+    category_id:  1
+    direccion: Caupolicán, 215-245, Temuco, Región de la Araucanía, Chile
+    lat: -38.73763636793623
+    lng: -72.59737508709412
+    
+  local4:
+    nombre_local:  La Perrera
+    descripcion_local: Antro
+    category_id:  2
+    direccion: Bernardo O`Higgins, 907, Temuco, Región de la Araucanía, Chile
+    lat: -38.7437484
+    lng: -72.5901913
+    
+  local5:
+    nombre_local:  Sanseacabo
+    descripcion_local: Bar con música en vivo (generalmente)
+    category_id:  3
+    direccion: Hochstetter, 435, Temuco, Región de la Araucanía, Chile
+    lat: -38.7336886
+    lng: -72.6133102   

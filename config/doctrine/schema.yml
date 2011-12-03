@@ -1,0 +1,44 @@
+LocalCategory:
+  actAs: { Timestampable: ~ }
+  columns:
+    name: { type: string(255), notnull: true, unique: true }
+    descripcion_categoria: {type: string(140), notnull: false}
+    url_icono_categoria: {type: string(140), notnull: false }      
+Local:
+  actAs: { Timestampable: ~ }  
+  connection: doctrine
+  tableName: local
+  columns:
+    id_local:
+      type: integer(4)
+      fixed: false
+      unsigned: false
+      primary: true
+      autoincrement: true
+    nombre_local:
+      type: string(140)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    descripcion_local:
+      type: string(140)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    category_id:  { type: integer, notnull: true }  
+    direccion:
+      type: string(80)
+      fixed: false
+      unsigned: false
+      primary: false
+      notnull: true
+      autoincrement: false
+    lat: { type: float, size: 10, scale: 6 }
+    lng: { type: float, size: 10, scale: 6 }
+    the_geom: { type: blob }
+  relations:
+    LocalCategory:  { onDelete: CASCADE,onUpdate: CASCADE,local: category_id, foreign: id }

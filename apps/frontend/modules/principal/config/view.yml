@@ -1,0 +1,4 @@
+indexSuccess:
+    javascripts:   [search.js]
+    stylesheets:
+      - search.css

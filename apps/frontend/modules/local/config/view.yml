@@ -1,0 +1,13 @@
+editSuccess:
+    javascripts:   
+      - local.js
+      - tiny_mce/tiny_mce.js
+    stylesheets:
+      - dashboard.css
+      
+newSuccess:
+    javascripts:   
+      - local.js
+      - tiny_mce/tiny_mce.js
+    stylesheets:
+      - dashboard.css      
