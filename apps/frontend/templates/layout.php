@@ -7,9 +7,9 @@
 <?php include_metas() ?>
 <title>
         <?php if (!get_slot('title')): ?>
-          Sistema Miguel
+          PuntoSeguro -
         <?php else: ?>
-          Sistema Miguel - <?php include_slot('title') ?>
+          PuntoSeguro - <?php include_slot('title') ?>
         <?php endif ?>
 </title>
 <?php include_stylesheets() ?>
