@@ -8,7 +8,7 @@
 	      <script>
         window.fbAsyncInit = function() {
           FB.init({
-            appId      : 'YOUR_APP_ID',
+            appId      : '226800787388755',
             status     : true, 
             cookie     : true,
             xfbml      : true
@@ -42,17 +42,15 @@
 			<h1>Registro de usuario</h1>
 			<!--<h2>-whatever-</h2>-->
 			<form name="reg" id="reg" method="POST" action="q.php?query=register">
-				<h2>Nombre de Usuario:<input type="text" name="usnm"></h2>
+				<h2>Nombre de Usuario:<input type="text" name="usnm"/></h2>
 				<h2>Contraseña:<input type="text" name="passwd"/></h2>
 				<h2>Repite Contraseña:<input type="text" name="rpasswd"/></h2>
 				<h2>E-Mail:<input type="text" name="email"/></h2>
 				<div class="sep"></div>
 				<input type="submit" value="Registro" class="button"/>
+                        </form>        
 		</div><div id="vert_sep"></div>
 	</div>
-		</form>
-	</div>
-
 <script type="text/javascript"></script>
 </body>
 </html>
