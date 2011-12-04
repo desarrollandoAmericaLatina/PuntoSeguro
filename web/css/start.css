@@ -1,4 +1,4 @@
-body {margin:0;padding:0;}
+body {margin:0;padding:0;font-family:Sans-serif}
 
 #header{margin:0 auto;padding:0;
 				height:29px; width:100%;
@@ -18,7 +18,7 @@ body {margin:0;padding:0;}
 		 }
 		#content h1 {font-size:25px;font-family:Verdana;color:#575757;}
 		#content h2 {font-size:15px;font-family:Sans-serif;color:#DA5D13;}
-		#content p	{font-size:12px;font-family:Times;color:#000;}
+		#content p	{font-size:12px;font-family:Sans-serif;color:#000;}
 #_map{
 width:500px;
 height:700px;
@@ -36,11 +36,11 @@ margin-top:20px;
 	width:170px;height:30px;
 	background-color:#DA5D13;
 	color:#eee;
-	
+
 	padding-top:10px;
 	border-right:1px solid#904400;	
 	border-bottom:1px solid#904400;
-	
+
 	text-align:center;
 	display:inline-block;
 	position:relative;left:120px;
@@ -98,12 +98,14 @@ margin-top:20px;
 	width:389px;
 	min-height:35px;
 	background-color:#eee;
+	color: #DA5D13;
 	text-align:left;
 	padding-top:12px;
 	padding-left:12px;
-	
+
 	font-size:14px;
 	font-family:sans-serif;
+	font-weight: bold;
 }
 
 .dt {
@@ -115,17 +117,19 @@ margin-top:20px;
 .box_se{
 	width:150px;
 	height:20px;
-	
+
 	text-align:center;
 	border:1px dashed#ddd;
-	
+
 	display:block;
-	
+
 	font-style:italic;
 	font-weight:bold;
 	font-family:arial;
 }
 
+<<<<<<< HEAD:web/GUI/style/start.css
+=======
 #e_comuna {
 	width:125px;
 	height:35px;
@@ -135,6 +139,7 @@ margin-top:20px;
 	
 }
 
+>>>>>>> 2021aae5cf11f7893fda4493a6e74938c00c72f0:web/css/start.css
 #salir{
 	width:50px;
 	height:20px;
@@ -151,6 +156,10 @@ margin-top:20px;
 #logo{
 float:right;
 position:relative;left:250px;
+<<<<<<< HEAD:web/GUI/style/start.css
+}
+=======
 }
 
 
+>>>>>>> 2021aae5cf11f7893fda4493a6e74938c00c72f0:web/css/start.css

@@ -131,8 +131,12 @@ function show_hide(id){
 	else {
 		did.style.visibility = 'hidden';
 	}
+<<<<<<< HEAD:web/GUI/scripts/dynamic.js
+}
+=======
 }
 
 
 
 		
+>>>>>>> 2021aae5cf11f7893fda4493a6e74938c00c72f0:web/js/dynamic.js
