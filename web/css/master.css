@@ -460,38 +460,6 @@ li input.checkbox {
     float: left;
     width: auto !important;
 }
-<<<<<<< HEAD
-=======
-
-.qbox{
-	width:170px;height:30px;
-	background-color:#DA5D13;
-	color:#eee;
-	
-	padding-top:10px;
-	border-right:1px solid#904400;	
-	border-bottom:1px solid#904400;
-	
-	text-align:center;
-	display:inline-block;
-	position:relative;left:50px;
-}
-.qbox a, a:link, a:active, a:visited, a:hover{
-	text-decoration:none;
-	color:inherit;
-}
-.logo{
-	z-index:0;
-float:right;
-}
-#content{ padding-top:50px;
-		 width:700px; height:400px;
-		 text-align:center;
-		 }
-		#content h1 {font-size:25px;font-family:Verdana;color:#575757;}
-		#content h2 {font-size:15px;font-family:Sans-serif;color:#DA5D13;}
-		#content p	{font-size:12px;font-family:Times;color:#000;}
->>>>>>> 7040d0ab93bf5be9a2e0cdb8594bac2ea6f4071d
 
 .qbox{
 	width:170px;height:30px;
