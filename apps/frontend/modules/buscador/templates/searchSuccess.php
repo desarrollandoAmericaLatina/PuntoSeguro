@@ -1,20 +1,36 @@
+<<<<<<< HEAD
 <div style="float:left; position:relative;left:200px;width:400px;">
 <h1 style="color:#DA5D13;position:relative;left:-140px;">Bienvenido a Punto Seguro </h1>
 <h2 style="height:70px;word-spacing:1em;">Una aplicación para compartir información sobre la seguridad de tu barrio y comuna.</h2>
 </div>
 <img src="/PuntoSeguro/web/images/logo_solo_b.jpg" class="logo" style="z-index:2;"/>
+=======
+<div id="content">
+<h1>Bienvenido a Punto Seguro,</h1>
+<h2>Una aplicación para compartir información sobre la seguridad de tu barrio y comuna.</h2>
+<img src="/PuntoSeguro/web/images/logo_solo_b.jpg" class="logo">
+>>>>>>> 7040d0ab93bf5be9a2e0cdb8594bac2ea6f4071d
 
 <?php slot('title') ?>
   <?php  echo sprintf('Puntos en '.$address) ?>
 <?php end_slot(); ?>
 <div style="position:relative;top:-150px;">
 <?php include_partial('buscadorSuperior',array('address' => $address, 'categories'=>$categories, 'filterCatArray'=>$filterCatArray)) ?>
+<<<<<<< HEAD
 </div>
 <div class="searchResults grid_9" id="map_container" style="position:relative;top:-120px;z-index:20;">
     <div id="map_canvas">Cargando...</div>
 </div>
 
 <div class=" grid_3">
+=======
+
+<div class="searchResults grid_9" id="map_container">
+    <div id="map_canvas">Cargando...</div>asd
+</div>
+
+<div class=" grid_3" >
+>>>>>>> 7040d0ab93bf5be9a2e0cdb8594bac2ea6f4071d
 <?php // echo image_tag('loading-image.gif','style=float:left;')?>
 
 				
@@ -73,3 +89,4 @@ zonas_layer.setMap(GM);
 });
 //]]>
 </script>
+</div>
