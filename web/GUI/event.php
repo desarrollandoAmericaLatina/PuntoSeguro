@@ -40,7 +40,7 @@
 				<br/>
 				
 				<p>
-					N° de usuarios: 6
+					Usuarios conectados: 6
 				</p>
 				<p id="e_comuna">
 					
