@@ -80,9 +80,13 @@ var b=Search(this, this.document, SEARCH_RESULTS);
 b.initMapWithResults();
 b.initEventListener();
 var GM=GeoSearch.getGMAP();
-var zonas_layer = new google.maps.KmlLayer("http://190.113.0.89/merobaronelauto.cl/www/app/GRIDRM600.kmz", {suppressInfoWindows: true,preserveViewport:true});
-zonas_layer.setMap(GM);
+//var zonas_layer = new google.maps.KmlLayer("http://190.113.0.89/merobaronelauto.cl/www/app/GRIDRM600.kmz", {suppressInfoWindows: true,preserveViewport:true});
+var zonas_layer = new google.maps.KmlLayer("http://knxroot.github.com/opendata/kml/GRIDRM600.kmz", {suppressInfoWindows: true,preserveViewport:true});
 
+
+zonas_layer.setMap(GM);
+//var zonas_layer2 = new google.maps.KmlLayer("http://knxroot.github.com/opendata/kml/proyectos_comunitarios_2010.kml", {suppressInfoWindows: true,preserveViewport:true});
+//zonas_layer2.setMap(GM);
 });
 //]]>
 </script>
