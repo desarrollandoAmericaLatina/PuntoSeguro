@@ -1,10 +1,10 @@
 body{margin:0;padding:0;}
 #header{
 		width:100%;height:150px;
-		background-image:url('img/hrep_x.jpg');background-repeat:repeat-x; }
-	#himage{background-image:url('logo.jpg');background-repeat:none;
+		background-image:url('img/hrep_x.jpg');background-repeat:repeat-x; }		
+	#himage{background-image:url('../images/logo.jpg');background-repeat:no-repeat;
 			margin:0 auto;padding:0;
-			height:95px;width:400px;
+			height:94px;width:400px;
 			float:right;
 			}
 #content{margin:0 auto; padding:0;

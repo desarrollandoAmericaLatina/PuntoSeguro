@@ -4,7 +4,7 @@ if($f){echo '<a href="#" style="font-size:10px;float:right;" onclick="show_hide(
 switch($f){
 	case 'logout':
 		//session_destroy();
-		header("Location: enter.php");
+		header("Location: enter");
 		break;
 	case 'ingresara_punto':
 		echo '<h2>Ingresa a punto</h2>';
