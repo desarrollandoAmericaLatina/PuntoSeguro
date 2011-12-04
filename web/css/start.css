@@ -1,0 +1,156 @@
+body {margin:0;padding:0;}
+
+#header{margin:0 auto;padding:0;
+				height:29px; width:100%;
+				background-image:url('img/hrep_x_start.jpg');background-repeat:repeat_x;
+				}
+		#header_content{margin:0 auto;padding:0;
+						text-align:right;
+						width:800px;
+						color:#fff; font-size:14px;
+						}
+#middle{margin:0 auto;padding:0;
+				min-height:600px; width:800px;
+				}
+#content{ padding-top:50px;
+		 width:700px; height:400px;
+		 text-align:center;
+		 }
+		#content h1 {font-size:25px;font-family:Verdana;color:#575757;}
+		#content h2 {font-size:15px;font-family:Sans-serif;color:#DA5D13;}
+		#content p	{font-size:12px;font-family:Times;color:#000;}
+#_map{
+width:500px;
+height:700px;
+border:1px dotted#ddd;
+margin:0 auto;
+margin-top:20px;
+}
+#info{
+	width:inherit;
+	height:70px;
+	color:#000;
+	background-color#DA5D13;
+}
+.qbox{
+	width:170px;height:30px;
+	background-color:#DA5D13;
+	color:#eee;
+	
+	padding-top:10px;
+	border-right:1px solid#904400;	
+	border-bottom:1px solid#904400;
+	
+	text-align:center;
+	display:inline-block;
+	position:relative;left:120px;
+}
+.qbox a, a:link, a:active, a:visited, a:hover{
+	text-decoration:none;
+	color:inherit;
+}
+
+#tt_k{
+	width:400px;height:200px;
+	border-bottom:1px dashed#ddd;
+	float:left;
+	background-color:#F9F9FF;
+}
+#sidebar{
+	width:280px;
+	height:500px;
+	float:right;
+	border-left:1px solid#999;
+	position:relative; top:-45px;
+}
+#sidebar p{
+	padding-left:20px;
+	font-size:15px;
+	text-align:left;
+}
+#comments{
+	clear:both;
+	position:relative;top:-250px;
+	text-align:left;	
+}
+#comments h2{
+	padding:0;
+	margin:0;
+}
+#comments p{
+	color:#2B2B2B;
+	font-size:14px;
+	padding:0;
+	margin:0;
+	padding-left:2em;
+}
+
+.s_coment_a{
+	background-color:#eee;
+	width:418px;
+}
+.s_coment_b{
+	background-color:#ddd;
+	width:418px;
+}
+
+#desc{
+	width:389px;
+	min-height:35px;
+	background-color:#eee;
+	text-align:left;
+	padding-top:12px;
+	padding-left:12px;
+	
+	font-size:14px;
+	font-family:sans-serif;
+}
+
+.dt {
+	color:#000;
+	font-size:12px; font-family:courier;
+	text-align:right;
+}
+
+.box_se{
+	width:150px;
+	height:20px;
+	
+	text-align:center;
+	border:1px dashed#ddd;
+	
+	display:block;
+	
+	font-style:italic;
+	font-weight:bold;
+	font-family:arial;
+}
+
+#e_comuna {
+	width:125px;
+	height:35px;
+	border:1px solid#000;
+
+	background-color:#090909;
+	
+}
+
+#salir{
+	width:50px;
+	height:20px;
+	border:1px solid#eee;
+	margin-left:20px;
+	z-index:2000000;
+}
+#salir a, a:link, a:visited, a:active{
+}
+#salir a:hover{
+
+}
+
+#logo{
+float:right;
+position:relative;left:250px;
+}
+
+
