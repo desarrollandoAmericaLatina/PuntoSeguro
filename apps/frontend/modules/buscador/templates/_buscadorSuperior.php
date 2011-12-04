@@ -23,8 +23,6 @@
 <label for="filterIn<?php echo $category['id']; ?>"><?php echo $category['name']; ?></label>
 </li>
 <?php endforeach; ?>
-<input id="live_search" class="checkbox" type="checkbox" value="on" name="live_search">
-<label for="live_search">Live Search</label>
 </ul>
 </div>
 

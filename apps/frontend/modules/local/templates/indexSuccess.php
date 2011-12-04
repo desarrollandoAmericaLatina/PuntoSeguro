@@ -1,10 +1,10 @@
-<h1>Tus locales registrados</h1>
+<h1>Tus Puntos Seguros registrados</h1>
 
 <table>
   <thead>
     <tr>
       <th>Id</th>
-      <th>Nombre local</th>
+      <th>Nombre Punto Seguro</th>
       <th>Categoría</th>      
       <th>Direccion</th>
       <th>Coordenadas</th>
