@@ -8,7 +8,7 @@ if(isset($_GET)){
 	else{
 		$lon = -72.613022;
 	}
-	if(isset($_POST['lat'])){
+	if(isset($_GET['lat'])){
 		$lat = $_GET['lat'];
 	}
 	else{
@@ -93,10 +93,10 @@ if(isset($_GET)){
 				<br/>
 				
 				<p>
-					N° de usuarios: 6
+					Usuarios conectados: 6
 				</p>
-				
 				<p id="e_comuna">
+<<<<<<< HEAD
 					<div id="show_comuna" style="float:left;background-color:#ddd;width:300px;margin-left:20px">
 					<h2 style="margin-left: 10px">Información sobre comuna</h2>
 					<div style="padding: 5px;background-color:#F9F9F9;border-left:1px dashed#ddd;border-bottom:1px dashed#ddd;border-right:1px dashed#ddd;">
@@ -230,6 +230,10 @@ if(isset($_GET)){
 					
 					</div>
 					</div>
+=======
+					
+					<div id="show_comuna" style="position:absolute;top:198px;left:145px;float:right;background-color:#ddd;width:300px;height:300px;"><h2>Datos de comuna</h2><div style="width:inherit;height:inherit;background-color:#F9F9F9;border-left:1px dashed#ddd;border-bottom:1px dashed#ddd;border-right:1px dashed#ddd;"></div></div>
+>>>>>>> 2021aae5cf11f7893fda4493a6e74938c00c72f0
 				</p>
 
 				<div style="float: left;margin-top: 50px">
@@ -237,6 +241,7 @@ if(isset($_GET)){
 				</div>
 				
 			</div>
+<<<<<<< HEAD
 
 			<div id="disqus_thread" style="float: left;width: 400px"></div>
 			<script type="text/javascript">
@@ -252,13 +257,35 @@ if(isset($_GET)){
 			    })();
 			</script>
 			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+=======
+			<div id="comments">
+				<div class="s_coment_a"><h2>User</h2><p>Comments</p><div class="dt">04-Dic-2011</div></div>
+				<div class="s_coment_b"><h2>User</h2><p>Comments</p><div class="dt">04-Dic-2011</div></div>
+				<div class="s_coment_a"><h2>User</h2><p>Comments</p><div class="dt">04-Dic-2011</div></div>
+				<div class="s_coment_b"><h2>User</h2><p>Comments</p><div class="dt">04-Dic-2011</div></div>
+				<br/>
+				<form name="new_msg">
+				
+					Tu opinión:<br/> <textarea name="msg" cols="50" rows="10"></textarea>
+									<input type="button" value="Opinar"/>
+				</form>
+			</div>
+>>>>>>> 2021aae5cf11f7893fda4493a6e74938c00c72f0
 			
 		</div>
 	</div>
 	<div id="footer">
 	
 	</div>
+<<<<<<< HEAD
 	
+=======
+	<script type="text/javascript">
+	var e_comuna = new clickOpt("ecomuna_1", "rels");
+	e_comuna.setDivtoReload('show_comuna'); e_comuna.setPagetoRequest('q.php'); e_comuna.setAttrs('f=ecomuna'); e_comuna.setMethod('GET');
+	e_comuna.run();
+	</script>
+>>>>>>> 2021aae5cf11f7893fda4493a6e74938c00c72f0
 </body>
 </html>
 <?php 
