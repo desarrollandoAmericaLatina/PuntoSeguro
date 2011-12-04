@@ -19,7 +19,7 @@
 	<div id="middle">
 		<div id="content">
 			<div id="trel" style="visibility:hidden;position:absolute;top:150px;left:200px;background-color:#ddd;width:250px;height:250px;"></div>
-			<div class="qbox"><a href="#" id="ingresara_punto" style="z-index:2000;">Ingresar a un punto</a></div>
+			<div class="qbox"><a href="#" id="ingresara_punto" style="z-index:2000;">Unirse a punto</a></div>
 			<div class="qbox"><a href="#" id="crear_punto"style="z-index:2000;">Crear un punto</a></div>
 		<? //map ?>
 		<div id="_map"></div>
