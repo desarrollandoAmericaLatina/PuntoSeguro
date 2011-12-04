@@ -14,8 +14,7 @@ default:
     stylesheets:
         - 960.min.css
         - master.css
-
-
+        #- start.css
     javascripts:
         - geo_search.js
 

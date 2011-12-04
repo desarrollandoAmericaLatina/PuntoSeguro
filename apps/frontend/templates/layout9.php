@@ -1,23 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="x-ua-compatible" content="ie=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-<?php include_http_metas() ?>
-<?php include_metas() ?>
-<title>
+        <?php include_http_metas() ?>
+        <?php include_metas() ?>
+	<title>
         <?php if (!get_slot('title')): ?>
           PuntoSeguro -
         <?php else: ?>
           PuntoSeguro - <?php include_slot('title') ?>
         <?php endif ?>
-</title>
-<?php include_stylesheets() ?>
-<link href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold" rel="stylesheet">
-<noscript>
-<link rel="stylesheet" href="<?php echo sfContext::getInstance()->getRequest()->getRelativeUrlRoot(). '/css/mobile.min.css'?>" />
-</noscript>
-
+        </title>
+	<?php include_stylesheets() ?>
+        <link href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold" rel="stylesheet">
+        <noscript>
+        <link rel="stylesheet" href="<?php echo sfContext::getInstance()->getRequest()->getRelativeUrlRoot(). '/css/mobile.min.css'?>" />
+        </noscript>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 <script>window.jQuery || document.write("<script src='<?php echo sfContext::getInstance()->getRequest()->getRelativeUrlRoot(). '/js/jquery/1.5.1/jquery.min.js'?>'>\x3C/script>")</script>
@@ -50,55 +47,41 @@ var GEOSEARCH_CONFIG = {
 </head>
 <body>
 
-<div class="container_12">
+           <div class="container_12">
     <div class="grid_12">
-    <ul id="header-account" style="background-image:url(<?php echo sfContext::getInstance()->getRequest()->getRelativeUrlRoot(). '/images/hrep_x_start.jpg'?>);background-repeat:repeat_x;">
-    <?php if (!include_slot('login-box')): ?>
+    <ul id="header-account">
 
-    <?php if ($sf_user->isAuthenticated()): ?>
-      <li class="login"><?php echo link_to('Salir', '@sf_guard_signout') ?></li>
-    <?php else: ?>
-      <li class="login"><?php echo link_to('Entrar', '@sf_guard_signin') ?></li>
-    <?php endif; ?>
-    <?php if ($sf_user->isAuthenticated()): ?>
-      <li class="account">Hola <?php echo $sf_user->getUsername();?></li>
-    <?php endif; ?>
-
-    <?php endif; ?>
     </ul>
 
-    </div>
+	<div id="header">
+		<div id="header_content">
+    <?php if (!include_slot('login-box')): ?>
 
-    <div class="clear"> &nbsp;</div>
+		<?php if ($sf_user->isAuthenticated()): ?>
+                   <?php echo $sf_user->getUsername();?>
+                <?php endif; ?> &nbsp;
+                    <?php if ($sf_user->isAuthenticated()): ?>
+                          <div id="logout_button" style="width:60px;height:20px;background-color:#605A55;display:inline-block;text-align:center;border:1px solid#999;"><a href="q.php?f=logout">LogOut</a></div>
+                        <?php else: ?>
+                          <div id="logout_button" style="width:60px;height:20px;background-color:#605A55;display:inline-block;text-align:center;border:1px solid#999;"><a href="q.php?f=login">Entrar</a></div>
+                        <?php endif; ?>
+    <?php endif; ?>
 
-    <?php echo $sf_content ?>
+
+		</div>
+	</div>
+	<div id="middle">
+
+            <?php echo $sf_content ?>
+
+	</div>
+
+	<div id="footer">
+
+	</div>
 
 
-    <!-- footer start -->
-    <div class="grid_3"> &nbsp;
+         </div>
     </div>
-    <div class="grid_6 align_center"> &nbsp;
-    </div>
-    <div class="grid_3 align_right">
-    <p>
-    <small>
-    Powered by
-    <a href="#">Nucleos</a>
-    </small>
-    </p>
-    </div>
-    </div>
-    <!-- footer end -->
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-

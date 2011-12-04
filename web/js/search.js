@@ -23,26 +23,40 @@ var Search = function(w, d, config, undefined) {
   
   var _makeLocalMarkerIcon=function(local){
 
+var marker_ico='/images/icons/local_maker_show.png';
+console.log(local.category_id);
+switch(local.category_id)
+{
+case '1':
+  marker_ico='/images/icons/denuncia.png';
+  break;
+case '2':
+  marker_ico='/images/icons/prevension.png';
+case '3':
+  marker_ico='/images/icons/carabineros.png';
+  break;
+}
+
     var marker = new google.maps.Marker({ 
           map:  GMAP,
           draggable: false,
           icon: new google.maps.MarkerImage(
-                    GeoSearch.getUrlRoot()+'/images/icons/local_maker_show.png', 
+                    GeoSearch.getUrlRoot()+marker_ico,
                     new google.maps.Size(34, 34), new google.maps.Point(0, 0)),
           position:  new google.maps.LatLng(local.lat, local.lng),
           title: local.nombre_local
     });    
 
-    return marker;
-
-/**
-  google.maps.event.addListener(marker, 'click', function() {
-    infowindow.open(map, marker);
-    addthis.toolbox(".addthis_toolbox");
+    
+   var contentString="<h3>"+local.nombre_local+"</h3><br>"+"<p>"+local.descripcion_local+"</p>";
+   var infowindow = new google.maps.InfoWindow({
+    content: '<div style="height: 250px; width: 200px;">'+contentString+'</div>'
   });
-  mc.addMarker(marker);
-  todos_los_puntos.push(marker);*/
 
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(GMAP, marker);
+  });
+  return marker;
   }
   
   
@@ -73,7 +87,7 @@ var Search = function(w, d, config, undefined) {
 
 
     var _initEventListener= function(){
-          google.maps.event.addListener(GMAP, 'idle', function() {
+         /* google.maps.event.addListener(GMAP, 'idle', function() {
             if(document.getElementById("live_search").checked){_updateLiveSearch();}
           })
           $('input[id^="filterIn"]:checkbox').change(function() {
@@ -81,7 +95,7 @@ var Search = function(w, d, config, undefined) {
           });
           $('#live_search').change(function() {
               if(this.checked){_updateLiveSearch();}
-          });          
+          });    */
     }
 
 

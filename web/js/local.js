@@ -113,7 +113,7 @@ var Local = (function(w, d) {
           map:  GMAP,
           draggable: true,
           icon: new google.maps.MarkerImage(
-                    GeoSearch.getUrlRoot()+'/images/icons/local_maker.png', 
+                    GeoSearch.getUrlRoot()+'/images/icons/drag_maker.png',
                     new google.maps.Size(34, 34), new google.maps.Point(0, 0))
         });
         marker.setPosition(location);

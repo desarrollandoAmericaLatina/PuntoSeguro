@@ -11,5 +11,8 @@
 $().ready(function() {
 GeoSearch.autoFormStyle($('form'));
 Local.initFormCreateNew();
+
 });
+
+
 </script>
