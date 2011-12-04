@@ -1,0 +1,52 @@
+body {margin:0;padding:0;}
+
+#header{margin:0 auto;padding:0;
+				height:29px; width:100%;
+				background-image:url('img/hrep_x_start.jpg');background-repeat:repeat_x;
+				}
+		#header_content{margin:0 auto;padding:0;
+						text-align:right;
+						width:800px;
+						color:#fff; font-size:14px;
+						}
+#middle{margin:0 auto;padding:0;
+				min-height:600px; width:800px;
+				}
+#content{ padding-top:50px;
+		 width:700px; height:400px;
+		 text-align:center;
+		 }
+		#content h1 {font-size:25px;font-family:Verdana;color:#575757;}
+		#content h2 {font-size:15px;font-family:Sans-serif;color:#DA5D13;}
+		#content p	{font-size:12px;font-family:Times;color:#000;}
+#_map{
+width:500px;
+height:700px;
+border:1px dotted#ddd;
+margin:0 auto;
+margin-top:20px;
+}
+#info{
+	width:inherit;
+	height:70px;
+	color:#000;
+	background-color#DA5D13;
+}
+.qbox{
+	width:150px;height:30px;
+	background-color:#DA5D13;
+	color:#eee;
+	
+	padding-top:10px;
+	margin-left:10px;
+	border-right:1px solid#904400;	
+	border-bottom:1px solid#904400;
+	
+	text-align:center;
+	display:inline-block;
+}
+.qbox a, a:link, a:active, a:visited, a:hover{
+	text-decoration:none;
+	color:inherit;
+}
+

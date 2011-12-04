@@ -5,6 +5,7 @@ body{margin:0;padding:0;}
 	#himage{background-image:url('logo.jpg');background-repeat:none;
 			margin:0 auto;padding:0;
 			height:95px;width:400px;
+			float:right;
 			}
 #content{margin:0 auto; padding:0;
 		 width:700px; height:400px;
