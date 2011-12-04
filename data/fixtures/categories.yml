@@ -1,10 +1,8 @@
 # data/fixtures/categories.yml
 LocalCategory:
   categoria1:
-    name: Bar
+    name: Denuncia
   categoria2:
-    name: Karaoke 
+    name: Prevensión
   categoria3:
-    name: Música en Vivo
-  categoria4:
-    name: Pub    
+    name: Apoyo

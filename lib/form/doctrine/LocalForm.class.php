@@ -13,7 +13,7 @@ class LocalForm extends BaseLocalForm
   public function configure()
   {
     $this->widgetSchema->setLabels(array(
-      'nombre_local'    => 'Nombre',
+      'nombre_local'    => 'Tema o Discusión',
       'descripcion_local'  => 'Descripción',
       'direccion'   => 'Dirección',
       'category_id'   => 'Categoría'       
@@ -23,18 +23,18 @@ class LocalForm extends BaseLocalForm
     $this->setValidators(array(
       'id_local'          => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id_local')), 'empty_value' => $this->getObject()->get('id_local'), 'required' => false)),        
       'nombre_local'  => new sfValidatorString(array('required' => true,'trim'=>true,'max_length' => 140,'min_length' => 3), array(
-        'required'   => 'Debes escribir el nombre del local',
+        'required'   => 'Debes escribir el nombre de la temática o discusión',
         'min_length' => 'El nombre "%value%" es demasiado corto. Su longitud debe ser al menos de %min_length% caracteres.',
         'max_length' => 'El nombre "%value%" es demasiado largo. Su longitud debe ser al menos de %max_length% caracteres.',
       )),
       'descripcion_local'   => new sfValidatorString(array('required' => true,'trim'=>true,'max_length' => 140,'min_length' => 3), array(
-        'required'   => 'Debes escribir una descripción para este local',
+        'required'   => 'Debes escribir una descripción para esta temática',
         'min_length' => 'La descripción es demasiado corta. Su longitud debe ser al menos de %min_length% caracteres.',
         'max_length' => 'La descripción es demasiado larga. Su longitud debe ser al menos de %max_length% caracteres.',
       )),
       'direccion'  => new sfValidatorString(array('required' => true,'trim'=>true,'min_length' => 3), array(          
-        'required'   => 'Debes escribir una dirección para este local aún cuando no pueda ser determinada por el mapa, recuerda posicionar el marcador del mapa en la posición geográfica correspondiente ya que dicha posición indicará donde mostrar el local a los usuarios independiente de la dirección que definas en el campo dirección.',
-        'min_length' => 'La dirección es demasiado corta. Su longitud debe ser al menos de %min_length% caracteres. En caso de que el local no tenga dirección escribe (S/D)'
+        'required'   => 'Debes escribir una dirección para este tema o discusión aún cuando no pueda ser determinada por el mapa, recuerda posicionar el marcador del mapa en la posición geográfica correspondiente ya que dicha posición indicará dónde mostrar la discusión a los usuarios independiente de la dirección que definas en el campo dirección.',
+        'min_length' => 'La dirección es demasiado corta. Su longitud debe ser al menos de %min_length% caracteres. En caso de que el punto geográfico no tenga dirección escribe (S/D)'
       )),
         
       'category_id'       => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('LocalCategory'))),        

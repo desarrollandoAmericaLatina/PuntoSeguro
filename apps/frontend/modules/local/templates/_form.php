@@ -54,7 +54,7 @@
           <div id="local_msg_pos_maker" class="ui-widget">
             <div style="margin-top: 20px; padding: 0pt 0.7em;" class="ui-state-highlight"> 
                     <p><span style="float: left; margin-right: 0.3em;" class="ui-icon ui-icon-info"></span>
-                    <strong>Posición geográfica: </strong> Ajusta la posición  de tu local en el mapa arrastrando el ícono y soltándolo.  </p>
+                    <strong>Posición geográfica: </strong> Ajusta la posición  del punto seguro en el mapa arrastrando el ícono y soltándolo.  </p>
             </div>
 	  </div>
           <?php echo $form['lat']->renderError() ?>

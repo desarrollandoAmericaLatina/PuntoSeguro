@@ -19,7 +19,7 @@
  * @method LocalCategory       setUrlIconoCategoria()     Sets the current record's "url_icono_categoria" value
  * @method LocalCategory       setLocal()                 Sets the current record's "Local" collection
  * 
- * @package    geo_search
+ * @package    PuntoSeguro
  * @subpackage model
  * @author     Gustavo Lacoste <gustavo@lacosox.org>
  * @version    SVN: $Id: Builder.php 7490 2010-03-29 19:53:27Z jwage $
