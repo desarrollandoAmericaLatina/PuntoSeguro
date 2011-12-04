@@ -32,10 +32,6 @@ abstract class BaseLocalCategoryForm extends BaseFormDoctrine
       'updated_at'            => new sfValidatorDateTime(),
     ));
 
-    $this->validatorSchema->setPostValidator(
-      new sfValidatorDoctrineUnique(array('model' => 'LocalCategory', 'column' => array('name')))
-    );
-
     $this->widgetSchema->setNameFormat('local_category[%s]');
 
     $this->errorSchema = new sfValidatorErrorSchema($this->validatorSchema);

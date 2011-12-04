@@ -48,7 +48,7 @@ case '3':
     });    
 
     
-   var contentString="<h3>"+local.nombre_local+"</h3><br>"+"<p>"+local.descripcion_local+"</p>";
+   var contentString="<h3>"+local.nombre_local+"</h3><br>"+"<p><a href='"+GeoSearch.getUrlRoot()+"/GUI/event.php?lat="+local.lat+"&lon="+local.lng+"'>Ir a la discusión</a></p>";
    var infowindow = new google.maps.InfoWindow({
     content: '<div style="height: 250px; width: 200px;">'+contentString+'</div>'
   });

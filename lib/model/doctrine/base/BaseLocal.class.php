@@ -11,30 +11,42 @@ Doctrine_Manager::getInstance()->bindComponent('Local', 'doctrine');
  * @property string $nombre_local
  * @property string $descripcion_local
  * @property integer $category_id
+ * @property integer $comuna_id
  * @property string $direccion
  * @property float $lat
  * @property float $lng
  * @property blob $the_geom
+ * @property timestamp $created_at
+ * @property timestamp $updated_at
  * @property LocalCategory $LocalCategory
+ * @property Comuna $Comuna
  * 
  * @method integer       getIdLocal()           Returns the current record's "id_local" value
  * @method string        getNombreLocal()       Returns the current record's "nombre_local" value
  * @method string        getDescripcionLocal()  Returns the current record's "descripcion_local" value
  * @method integer       getCategoryId()        Returns the current record's "category_id" value
+ * @method integer       getComunaId()          Returns the current record's "comuna_id" value
  * @method string        getDireccion()         Returns the current record's "direccion" value
  * @method float         getLat()               Returns the current record's "lat" value
  * @method float         getLng()               Returns the current record's "lng" value
  * @method blob          getTheGeom()           Returns the current record's "the_geom" value
+ * @method timestamp     getCreatedAt()         Returns the current record's "created_at" value
+ * @method timestamp     getUpdatedAt()         Returns the current record's "updated_at" value
  * @method LocalCategory getLocalCategory()     Returns the current record's "LocalCategory" value
+ * @method Comuna        getComuna()            Returns the current record's "Comuna" value
  * @method Local         setIdLocal()           Sets the current record's "id_local" value
  * @method Local         setNombreLocal()       Sets the current record's "nombre_local" value
  * @method Local         setDescripcionLocal()  Sets the current record's "descripcion_local" value
  * @method Local         setCategoryId()        Sets the current record's "category_id" value
+ * @method Local         setComunaId()          Sets the current record's "comuna_id" value
  * @method Local         setDireccion()         Sets the current record's "direccion" value
  * @method Local         setLat()               Sets the current record's "lat" value
  * @method Local         setLng()               Sets the current record's "lng" value
  * @method Local         setTheGeom()           Sets the current record's "the_geom" value
+ * @method Local         setCreatedAt()         Sets the current record's "created_at" value
+ * @method Local         setUpdatedAt()         Sets the current record's "updated_at" value
  * @method Local         setLocalCategory()     Sets the current record's "LocalCategory" value
+ * @method Local         setComuna()            Sets the current record's "Comuna" value
  * 
  * @package    PuntoSeguro
  * @subpackage model
@@ -72,9 +84,23 @@ abstract class BaseLocal extends sfMapFishRecord
              'autoincrement' => false,
              'length' => 140,
              ));
-        $this->hasColumn('category_id', 'integer', null, array(
+        $this->hasColumn('category_id', 'integer', 8, array(
              'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
              'notnull' => true,
+             'autoincrement' => false,
+             'length' => 8,
+             ));
+        $this->hasColumn('comuna_id', 'integer', 4, array(
+             'type' => 'integer',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => false,
+             'autoincrement' => false,
+             'length' => 4,
              ));
         $this->hasColumn('direccion', 'string', 80, array(
              'type' => 'string',
@@ -87,18 +113,48 @@ abstract class BaseLocal extends sfMapFishRecord
              ));
         $this->hasColumn('lat', 'float', 10, array(
              'type' => 'float',
-             'size' => 10,
-             'scale' => 6,
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => false,
+             'autoincrement' => false,
              'length' => 10,
              ));
         $this->hasColumn('lng', 'float', 10, array(
              'type' => 'float',
-             'size' => 10,
-             'scale' => 6,
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => false,
+             'autoincrement' => false,
              'length' => 10,
              ));
         $this->hasColumn('the_geom', 'blob', null, array(
              'type' => 'blob',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => false,
+             'autoincrement' => false,
+             'length' => '',
+             ));
+        $this->hasColumn('created_at', 'timestamp', 25, array(
+             'type' => 'timestamp',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => 25,
+             ));
+        $this->hasColumn('updated_at', 'timestamp', 25, array(
+             'type' => 'timestamp',
+             'fixed' => 0,
+             'unsigned' => false,
+             'primary' => false,
+             'notnull' => true,
+             'autoincrement' => false,
+             'length' => 25,
              ));
     }
 
@@ -107,11 +163,10 @@ abstract class BaseLocal extends sfMapFishRecord
         parent::setUp();
         $this->hasOne('LocalCategory', array(
              'local' => 'category_id',
-             'foreign' => 'id',
-             'onDelete' => 'CASCADE',
-             'onUpdate' => 'CASCADE'));
+             'foreign' => 'id'));
 
-        $timestampable0 = new Doctrine_Template_Timestampable();
-        $this->actAs($timestampable0);
+        $this->hasOne('Comuna', array(
+             'local' => 'comuna_id',
+             'foreign' => 'comuna_id'));
     }
 }
