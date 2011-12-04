@@ -264,7 +264,7 @@ if(isset($_GET)){
 <?php 
 function get_locale_data($latitude, $longitude)
 {
-	$link =  mysql_connect('localhost', 'root', 'root');
+	$link =  mysql_connect('localhost', 'root', 'walkirias84');
 	if (!$link) {
 	    die('Error al conectarse: ' . mysql_error());
 	}
