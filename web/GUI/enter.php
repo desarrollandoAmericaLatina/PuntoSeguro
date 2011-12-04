@@ -4,27 +4,27 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>default</title>
 	<link rel="stylesheet" type="text/css" href="style/enter.css"/>
-	<script type="text/javascript" src=""></script>
-	      <script>
-        window.fbAsyncInit = function() {
+	<script>
+         window.fbAsyncInit = function() {
           FB.init({
             appId      : '226800787388755',
             status     : true, 
             cookie     : true,
             xfbml      : true
           });
-        };
-        (function(d){
+         };
+         (function(d){
            var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
            js = d.createElement('script'); js.id = id; js.async = true;
            js.src = "//connect.facebook.net/en_US/all.js";
            d.getElementsByTagName('head')[0].appendChild(js);
 			}(document));
-      </script>
+         </script>
 </head>
-<body> <div id="fb-root"></div>
+<body> 
+ <div id="fb-root"></div>
 	<div id="header">
-		<div id="himage"></div>
+	 <div id="himage"></div>
 	</div>
 	<div id="content">
 		<div id="login">
@@ -51,6 +51,5 @@
                         </form>        
 		</div><div id="vert_sep"></div>
 	</div>
-<script type="text/javascript"></script>
 </body>
 </html>
