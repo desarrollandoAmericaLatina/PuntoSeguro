@@ -83,7 +83,7 @@ var GEOSEARCH_CONFIG = {
     <p>
     <small>
     Powered by
-    <a href="http://www.lacosox.org">Gustavo Lacoste</a>
+    <a href="#">Nucleos</a>
     </small>
     </p>
     </div>
