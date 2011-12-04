@@ -50,3 +50,24 @@ margin-top:20px;
 	color:inherit;
 }
 
+#tt_k{
+	width:400px;height:300px;
+	border-bottom:1px dashed#ddd;
+	float:left;
+	background-color:#F9F9FF;
+}
+#sidebar{
+	width:280px;
+	height:500px;
+	float:right;
+	border-left:1px solid#999;
+}
+#comments{
+	clear:both;
+	position:relative;top:-150px;
+	text-align:left;
+}
+#comments p{
+	color:#2B2B2B;
+	font-size:14px;
+}

@@ -3,6 +3,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title>default</title>
+	
 	<link rel="stylesheet" type="text/css" href="style/enter.css"/>
 	<script type="text/javascript" src=""></script>
 	      <script>
