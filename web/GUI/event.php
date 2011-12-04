@@ -1,15 +1,15 @@
 <?php
 require_once 'JunarApi.php';
 
-if(isset($_POST)){
-	if(isset($_POST['lon'])){
-		$lon = $_POST['lon'];
+if(isset($_GET)){
+	if(isset($_GET['lon'])){
+		$lon = $_GET['lon'];
 	}
 	else{
 		$lon = -72.613022;
 	}
-	if(isset($_POST['lat'])){
-		$lat = $_POST['lat'];
+	if(isset($_GET['lat'])){
+		$lat = $_GET['lat'];
 	}
 	else{
 		$lat = -38.734276; 
@@ -291,7 +291,7 @@ if(isset($_POST)){
 <?php 
 function get_locale_data($latitude, $longitude)
 {
-	$link =  mysql_connect('localhost', 'root', 'walkirias84');
+	$link =  mysql_connect('localhost', 'root', 'root');
 	if (!$link) {
 	    die('Error al conectarse: ' . mysql_error());
 	}
