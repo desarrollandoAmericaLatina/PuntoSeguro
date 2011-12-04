@@ -1,5 +1,5 @@
 <?php slot('title') ?>
-  <?php  echo sprintf('Locales en '.$address) ?>
+  <?php  echo sprintf('Puntos en '.$address) ?>
 <?php end_slot(); ?>
 
 <?php include_partial('buscadorSuperior',array('address' => $address, 'categories'=>$categories, 'filterCatArray'=>$filterCatArray)) ?>
@@ -51,7 +51,7 @@
     <?php endif ?>
     </div>
         
-    <div id="info">sss</div>
+    <div style="display:none" id="info">sss</div>
 
     </div>
 
@@ -79,6 +79,10 @@ $().ready(function() {
 var b=Search(this, this.document, SEARCH_RESULTS);
 b.initMapWithResults();
 b.initEventListener();
+var GM=GeoSearch.getGMAP();
+var zonas_layer = new google.maps.KmlLayer("http://190.113.0.89/merobaronelauto.cl/www/app/GRIDRM600.kmz", {suppressInfoWindows: true,preserveViewport:true});
+zonas_layer.setMap(GM);
+
 });
 //]]>
 </script>
