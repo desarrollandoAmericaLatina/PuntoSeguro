@@ -42,9 +42,9 @@
 				<p>
 					N° de usuarios: 6
 				</p>
-				
 				<p id="e_comuna">
-					Estadistica de comuna
+					
+					<div id="show_comuna" style="position:absolute;top:200px;left:145px;float:right;background-color:#ddd;width:300px;height:300px;"><h2>Datos de comuna</h2><div style="width:inherit;height:inherit;background-color:#eee"></div></div>
 				</p>
 				<p id="salir"><a href="start">Salir</a></p>
 				
@@ -56,6 +56,7 @@
 				<div class="s_coment_b"><h2>User</h2><p>Comments</p><div class="dt">04-Dic-2011</div></div>
 				<br/>
 				<form name="new_msg">
+				
 					Tu opinión:<br/> <textarea name="msg" cols="50" rows="10"></textarea>
 									<input type="button" value="Opinar"/>
 				</form>
@@ -67,7 +68,9 @@
 	
 	</div>
 	<script type="text/javascript">
-
+	var e_comuna = new clickOpt("ecomuna_1", "rels");
+	e_comuna.setDivtoReload('show_comuna'); e_comuna.setPagetoRequest('q.php'); e_comuna.setAttrs('f=ecomuna'); e_comuna.setMethod('GET');
+	e_comuna.run();
 	</script>
 </body>
 </html>

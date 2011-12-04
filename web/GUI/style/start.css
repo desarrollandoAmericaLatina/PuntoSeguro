@@ -38,12 +38,12 @@ margin-top:20px;
 	color:#eee;
 	
 	padding-top:10px;
-	margin-left:10px;
 	border-right:1px solid#904400;	
 	border-bottom:1px solid#904400;
 	
 	text-align:center;
 	display:inline-block;
+	position:relative;left:120px;
 }
 .qbox a, a:link, a:active, a:visited, a:hover{
 	text-decoration:none;
@@ -127,10 +127,12 @@ margin-top:20px;
 }
 
 #e_comuna {
-	width:100px;
-	height:50px;
+	width:125px;
+	height:35px;
 	border:1px solid#000;
-	margin-left:20px;
+
+	background-color:#090909;
+	
 }
 
 #salir{
@@ -138,11 +140,17 @@ margin-top:20px;
 	height:20px;
 	border:1px dotted#000;
 	margin-left:20px;
-	
+	z-index:2000000;
 }
 #salir a, a:link, a:visited, a:active{
 }
 #salir a:hover{
 
 }
+
+#logo{
+float:right;
+position:relative;left:250px;
+}
+
 

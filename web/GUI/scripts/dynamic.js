@@ -125,9 +125,14 @@ clickOpt.prototype.run = function(){
 function show_hide(id){
 	var did = document.getElementById(id);
 	var dvis = did.style.visibility;
-	if (dvis=='hidden') did.style.visibility = 'visible';
-	else did.style.visibility = 'hidden';
+	if (dvis=='hidden'){
+		did.style.visibility = 'visible';
+	}
+	else {
+		did.style.visibility = 'hidden';
+	}
 }
+
 
 
 		
