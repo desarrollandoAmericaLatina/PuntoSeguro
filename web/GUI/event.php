@@ -10,6 +10,15 @@
 	<script type="text/javascript" src="scripts/dynamic.js"></script>
 </head>
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 	<div id="header">
 		<div id="header_content">
 		Usuario&nbsp;
@@ -20,11 +29,38 @@
 		<div id="content">
 			<div id="trel" style="visibility:hidden;position:absolute;top:150px;left:200px;background-color:#ddd;width:250px;height:250px;"></div>
 		<? //map ?>
+			<div id="desc">Descripcion del mapa</div>
 			<div id="tt_k"></div>
-			<div id="sidebar"></div>
-			<div id="comments">
-			<p>adadada</p>
+			<div id="sidebar">
+				<p>
+					INICIO:<span class="box_se">4&nbsp;Dic&nbsp;2011 - 16:00 hrs</span>
+					<br/>
+					FINAL:<span class="box_se">5&nbsp;Dic&nbsp;2011 - 18:00 hrs</span>
+				</p>
+				<br/>
+				
+				<p>
+					N° de usuarios: 6
+				</p>
+				
+				<p id="e_comuna">
+					Estadistica de comuna
+				</p>
+				<p id="salir"><a href="start">Salir</a></p>
+				
 			</div>
+			<div id="comments">
+				<div class="s_coment_a"><h2>User</h2><p>Comments</p><div class="dt">04-Dic-2011</div></div>
+				<div class="s_coment_b"><h2>User</h2><p>Comments</p><div class="dt">04-Dic-2011</div></div>
+				<div class="s_coment_a"><h2>User</h2><p>Comments</p><div class="dt">04-Dic-2011</div></div>
+				<div class="s_coment_b"><h2>User</h2><p>Comments</p><div class="dt">04-Dic-2011</div></div>
+				<br/>
+				<form name="new_msg">
+					Tu opinión:<br/> <textarea name="msg" cols="50" rows="10"></textarea>
+									<input type="button" value="Opinar"/>
+				</form>
+			</div>
+			
 		</div>
 	</div>
 	<div id="footer">
