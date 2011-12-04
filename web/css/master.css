@@ -460,3 +460,17 @@ li input.checkbox {
     float: left;
     width: auto !important;
 }
+.qbox {
+    background-color: #DA5D13;
+    border-bottom: 1px solid #904400;
+    border-right: 1px solid #904400;
+    color: #EEEEEE;
+    display: inline-block;
+    height: 30px;
+    left: 17px;
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+    width: 170px;
+}
+

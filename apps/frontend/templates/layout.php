@@ -17,7 +17,7 @@
 <noscript>
 <link rel="stylesheet" href="<?php echo sfContext::getInstance()->getRequest()->getRelativeUrlRoot(). '/css/mobile.min.css'?>" />
 </noscript>
-   
+
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 <script>window.jQuery || document.write("<script src='<?php echo sfContext::getInstance()->getRequest()->getRelativeUrlRoot(). '/js/jquery/1.5.1/jquery.min.js'?>'>\x3C/script>")</script>
@@ -46,16 +46,15 @@ var GEOSEARCH_CONFIG = {
 
 //]]>
 </script>
-<?php include_javascripts() ?>  
+<?php include_javascripts() ?>
 </head>
 <body>
 
 <div class="container_12">
     <div class="grid_12">
-      
-    <ul id="header-account">
+    <ul id="header-account" style="background-image:url(<?php echo sfContext::getInstance()->getRequest()->getRelativeUrlRoot(). '/images/hrep_x_start.jpg'?>);background-repeat:repeat_x;">
     <?php if (!include_slot('login-box')): ?>
-      
+
     <?php if ($sf_user->isAuthenticated()): ?>
       <li class="login"><?php echo link_to('Salir', '@sf_guard_signout') ?></li>
     <?php else: ?>
@@ -63,18 +62,18 @@ var GEOSEARCH_CONFIG = {
     <?php endif; ?>
     <?php if ($sf_user->isAuthenticated()): ?>
       <li class="account">Hola <?php echo $sf_user->getUsername();?></li>
-    <?php endif; ?>  
-      
-    <?php endif; ?>   
+    <?php endif; ?>
+
+    <?php endif; ?>
     </ul>
-        
+
     </div>
- 
+
     <div class="clear"> &nbsp;</div>
-    
+
     <?php echo $sf_content ?>
-    
-    
+
+
     <!-- footer start -->
     <div class="grid_3"> &nbsp;
     </div>
@@ -84,7 +83,7 @@ var GEOSEARCH_CONFIG = {
     <p>
     <small>
     Powered by
-    <a href="http://www.lacosox.org">Gustavo Lacoste</a> 
+    <a href="http://www.lacosox.org">Gustavo Lacoste</a>
     </small>
     </p>
     </div>

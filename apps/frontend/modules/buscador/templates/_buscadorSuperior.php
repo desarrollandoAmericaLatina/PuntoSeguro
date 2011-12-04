@@ -1,10 +1,11 @@
 <?php $filterCatArray=$sf_data->getRaw('filterCatArray');?>
 
 <div id="mastHead">
-  <form id="header_find_form" name="header_find_form" action="<?php echo url_for('buscador/search');?>" method="get">    
-  <div class="grid_9 push_3" style="background-color: #F5F5F5">
-    
-    
+  <form id="header_find_form" name="header_find_form" action="<?php echo url_for('buscador/search');?>" method="get">
+ <div class="grid_3" style="background-color: #FFF;margin-top: 19px;">
+     <div class="qbox"><a style="z-index:2000;" id="crear_punto" href="#">Crear un punto</a></div>
+ </div>
+  <div class="grid_9" style="background-color: #FFF">
       <p class="clearfix" id="search_near">
         <label for="dropperText_Mast">Ciudad o dirección <em>(Ej.- Temuco)</em></label>
         <input value="<?php echo $address; ?>" size="14" id="find_loc" tabindex="2" name="find_loc" maxlength="64">
@@ -13,7 +14,7 @@
       <br>
   </div>
   <div class="clear"></div>
-  <div class="grid_9 push_3" style="background-color: #F5F5F5">
+  <div class="grid_9 push_3" style="background-color: #FFF">
 
 <div id="keywordSearchIn" class="searchFilters clearfix">
 <ul class="checkbox-list clearfix">

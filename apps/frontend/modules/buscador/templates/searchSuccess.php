@@ -1,64 +1,34 @@
+<div id="content">
+        <div id="logo"><img src="images/logo_solo_b.jpg"/></div>
+        
+</div>
+
+
 <?php slot('title') ?>
   <?php  echo sprintf('Puntos en '.$address) ?>
 <?php end_slot(); ?>
 
 <?php include_partial('buscadorSuperior',array('address' => $address, 'categories'=>$categories, 'filterCatArray'=>$filterCatArray)) ?>
 
-<div id="result_list_container" class="searchResults grid_3" style="background-color: #e0dcd7">
-    <div id="searchResults">
-
-    <ul class="results">
-    <?php foreach( $pager->getResults() as $row): ?>
-        
-    <li href="#" class="local-list-item ui-widget-content">
-        <a class="local-list-item-link ui-widget" href="">
-            <div class="img_local_wrap_ext">
-            <div class="img_local_wrap_int">
-              <?php echo image_tag('logo_test.png', 'size=60x60'); ?>
-            </div>
-            </div>
-            <div class="result_txtbloq">
-              <div class="resultado_item_txt">
-              <div class="ui-widget-header"><?php echo $row->getNombreLocal();?></div>
-              <p class=""><?php echo html_entity_decode($row->getDescripcionLocal());?></p>
-              </div>
-            </div>
-        </a>
-    </li>&nbsp;
-        
-    <?php endforeach; ?>
-    &nbsp;
-    </ul>
-
-    <div class="ui-pg">    
-    <?php if ($pager->haveToPaginate()): ?>
-    <?php echo link_to('«', 'buscador/search?'.$sf_data->getRaw('parameters').'page='.$pager->getFirstPage()) ?>
-    <?php echo link_to('<', 'buscador/search?'.$sf_data->getRaw('parameters').'page='.$pager->getPreviousPage()) ?>
-    <?php $links = $pager->getLinks();
-    $page=0;
-    foreach ($links as $page): ?>
-
-    <?php echo ($page == $pager->getPage()) ? $page : link_to($page, 'buscador/search?'.$sf_data->getRaw('parameters').'page='.$page) ?>
-
-    <?php if ($page != $pager->getCurrentMaxLink()): ?> –
-    <?php else: ?>
-    <?php echo link_to('>', 'buscador/search?'.$sf_data->getRaw('parameters').'page='.$pager->getNextPage()) ?>
-    <?php echo link_to('»', 'buscador/search?'.$sf_data->getRaw('parameters').'page='.$pager->getLastPage()) ?>
-    <?php endif ?>
-    <?php endforeach ?>
-
-    <?php echo $pager->getPage().' / '.$pager->getLastPage()?>
-    <?php endif ?>
-    </div>
-        
-    <div style="display:none" id="info">sss</div>
-
-    </div>
-
-
-</div>
 <div class="searchResults grid_9" id="map_container">
     <div id="map_canvas">Cargando...</div>
+</div>
+
+<div class=" grid_3" >
+<?php echo image_tag('logo_solo_b.jpg','60x60'); // echo image_tag('loading-image.gif','style=float:left;')?>
+ <div id="instrucciones"><h2>Instrucciones:</h2>
+    <p>
+    <ul style="text-align:left;">
+    <li>Crea un punto seguro en el mapa en la ubicación de tu barrio.
+    o Unete a un punto seguro ya creado.</li>
+    <li>Discute, organizate con tus vecinos</li>
+    <li>Infórmate sobre la delincuencia en tu comuna</li>
+    <li>Comparte y difunde el punto seguro.</li>
+    </p>
+    </ul>
+ </div>
+
+
 </div>
 
 <script type="text/javascript">
