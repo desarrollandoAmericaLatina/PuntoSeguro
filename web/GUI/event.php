@@ -44,7 +44,7 @@
 				</p>
 				<p id="e_comuna">
 					
-					<div id="show_comuna" style="position:absolute;top:198px;left:145px;float:right;background-color:#ddd;width:300px;height:300px;"><h2>Datos de comuna</h2><div style="width:inherit;height:inherit;background-color:#fff;border-left:1px dashed#ddd;border-bottom:1px dashed#ddd;border-right:1px dashed#ddd;"></div></div>
+					<div id="show_comuna" style="position:absolute;top:198px;left:145px;float:right;background-color:#ddd;width:300px;height:300px;"><h2>Datos de comuna</h2><div style="width:inherit;height:inherit;background-color:#F9F9F9;border-left:1px dashed#ddd;border-bottom:1px dashed#ddd;border-right:1px dashed#ddd;"></div></div>
 				</p>
 				<p id="salir"><a href="start">Salir</a></p>
 				
